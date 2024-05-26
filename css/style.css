@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 24px 78px 18px 98px;
+  align-items: center;
+  position: relative;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header ul a {
+  color: #636060;
+  font-size: 18px;
+  margin-left: 50px;
+  padding: 5px 10px;
+}
+header span {
+  display: none;
+}
+header span i {
+  font-size: 40px;
+  color: #010101;
+  cursor: pointer;
+}
+
+/* header end */
+/* main start */
+main .main-container {
+  width: 100%;
+  height: 606px;
+  background-image: url(../img/Rectangle\ 1.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+}
+main .main-container .text-main {
+  margin: auto;
+}
+main .main-container .text-main h2 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+main p {
+  color: #fff;
+  font-size: 20px;
+}
+main .tours-container {
+  padding: 84px 100px 84px 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .tours-container .tours {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 924px;
+}
+main .tours-container .tours .tour {
+  width: 286px;
+  margin-bottom: 56px;
+}
+main .tours-container .tours .tour img {
+  margin-bottom: 24px;
+}
+main .tours-container .tours .tour h5 {
+  margin-bottom: 10px;
+  color: #343232;
+  font-size: 20px;
+}
+main .tours-container .tours .tour p {
+  color: #636060;
+}
+main .tours-container .text-container {
+  width: 236px;
+  margin-bottom: 100px;
+}
+main .tours-container .text-container h4 {
+  color: #636060;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+main .tours-container .text-container h3 {
+  color: #010101;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+main .tours-container .text-container p {
+  color: #636060;
+  font-size: 20px;
+}
+
+/* main end */
+/* animation */
+@keyframes navigation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2784313725);
+  }
+}
+@keyframes navigation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2784313725);
+  }
+}
+@media only screen and (max-width: 1360px) {
+  header span {
+    display: block;
+  }
+  header nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    z-index: 2;
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+  }
+  header ul li {
+    margin: 6px 0;
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2784313725);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2784313725);
+    background-color: #fff;
+  }
+  header ul li:nth-child(1) {
+    animation: navigation 0.4s linear;
+  }
+  header ul li:nth-child(2) {
+    animation: navigation 0.7s linear;
+  }
+  header ul li:nth-child(3) {
+    animation: navigation 1s linear;
+  }
+  header ul li:nth-child(4) {
+    animation: navigation 1.3s linear;
+    margin-bottom: 500px;
+  }
+  .main-container .tours-container {
+    justify-content: center;
+  }
+  .main-container .tours-container .tours {
+    width: 100%;
+    align-items: center;
+  }
+  .main-container .tours-container .tours .tour {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-container .tours-container .tours .tour p,
+  .main-container .tours-container .tours .tour h5 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main-container .tours-container .tours .tour img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .main-container .tours-container .text-container {
+    margin-bottom: 50px;
+    width: 90%;
+    text-align: center;
+  }
+  .main-container .tours-container .text-container h3 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  .main-container h2 {
+    font-size: 20px;
+  }
+  .main-container p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-container {
+    height: 380px;
+  }
+}/*# sourceMappingURL=style.css.map */
